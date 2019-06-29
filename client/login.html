@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Todolist</title>
+  <style>
+    html, body {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        
+        background-color: rgb(42,139,195);
+        background-image: url('res/emoji-background.png');
+        background-size: 30%;
+    }
+    
+    .container {
+        border-radius: 5px;
+        background-color: white;
+        padding: 10px;
+        
+        width: 20%;
+        height: 10%;
+    }
+  
+    #loginform {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .title {
+        font-size: 1rem;
+    }
+    
+    .buttondiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <form id="loginform">
+            <div class="title">
+                Hello
+            </div>
+            <div>
+                <input required type="email" name="email" placeholder="Enter your email"/>
+            </div>
+            <div class="buttondiv">
+                <input type="submit" value="Open my shopping list">
+            </div>
+        </form>
+    </div>
+    <script src="js/loginService.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

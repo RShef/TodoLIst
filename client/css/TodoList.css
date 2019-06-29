@@ -1,0 +1,41 @@
+.todolist {
+    /* the main container that contains all the todo items*/
+    
+}
+
+.todoItem {
+    /* the todo item container, that contains 3 elements: checkbox, text, delete button. */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1px;
+    padding: 5px;
+}
+
+.todoItemCheckbox {
+    /* understand by the name :)*/
+    width: 30px;
+    height: 30px;
+    margin-top: 1px;
+}
+
+.todoItemText {
+    /* div that contains the text of the todo */
+    font-size: 1.5rem;
+}
+
+.todoItemDelete {
+    /* the button of the delete */
+    font-weight: 900;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    
+    width: 30px;
+    height: 30px;
+}
+
+.todoItemDone {
+    text-decoration: line-through;
+}
