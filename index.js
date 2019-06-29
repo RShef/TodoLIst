@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const routes = require('./routes');
-app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req,res,next) => {
     return res.sendFile('client/login.html', {root: __dirname});
 });
@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 // register all the routes
 routes.registerRoutes(app);
 
-// start the server
-app.listen(8080, () => {
-    console.log('server is running on port 3000');
+// start the server process.env.PORT || 
+app.listen(4000, () => {
+    console.log('server is running on port 4000');
 });
