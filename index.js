@@ -21,13 +21,13 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
-    next(); 
+    next();
 });*/
 
 // register all the routes
 routes.registerRoutes(app);
 
 // start the server
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('server is running on port 3000');
 });
