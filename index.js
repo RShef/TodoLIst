@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const routes = require('./routes');
-
+app.use(express.static(__dirname));
 app.get('/', (req,res,next) => {
     return res.sendFile('client/login.html', {root: __dirname});
 });
