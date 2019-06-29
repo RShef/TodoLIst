@@ -28,6 +28,6 @@ app.use((req, res, next) => {
 routes.registerRoutes(app);
 
 // start the server
-app.listen(process.env.PORT, () => {
+app.listen(8080, () => {
     console.log('server is running on port 3000');
 });
